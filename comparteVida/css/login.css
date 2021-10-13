@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    height: 80%;
+    margin-bottom: 0.5px;
+    border-top: 100% black;
+    border-bottom: 900px black;
+}
+
+.Franja1{
+    height: 80px;
+    width: 100%;
+    color:black;
+    background-color: black;
+    margin-top: 0px;
+    margin-right: 304px;
+}
+.Franja2{
+    height: 100px;
+    width: 100%;
+    color:white;
+    background-color: black;
+    margin-top: -95px;
+    margin-right: 304px;
+}
+
+.Franja2 p2{
+    margin-left: 600px;
+    margin-right: 250px;
+}
+
+.Franja2 p3{
+    margin-left: 680px;
+    margin-right: 250px;
+}
+
+.Imag1{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 700px;
+    height: 150px;
+    width: 300px;
+    top: 2,5%;
+    left: 30px;
+    z-index: 1;
+}
+
+.Imag2{
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    z-index: -1;
+}
+.Login {
+    margin-left: 180px;
+    margin-right: 200px;
+    margin-bottom: 0px;
+    margin-top: 0.5px;
+    padding: 10%;    
+}
+
+.Login p1{
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.Login h4{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.Login h5 {
+    margin: 0;
+    height: 40px;
+    margin-left: 310px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 40px;
+}
+
+.control {
+    width: 40%;
+    border: 1px solid rgb(157, 160, 182);
+    margin-left: 290px;
+    margin-bottom: 20px;
+    padding: 11px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.button {
+    width: 20%;
+    height: 40px;
+    background-color: red;
+    border-color: slategray;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 400px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.Login p{
+    font-size: 20px;
+    margin-left: 370px;
+}
+
+.Login a{
+    text-decoration: none;
+}
+
+.Login a:hover {
+    text-decoration: underline;
+}
+

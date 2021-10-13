@@ -1,0 +1,93 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700italic,700);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    min-height: 100%;
+}
+.registrate{
+    font-size: 1.4rem;
+    text-align: left;
+    padding-left: 5px;
+    color: yellow;
+}
+.registro{
+    font-size: 1rem;
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-top: dotted 5px rgb(206, 206, 206);
+}
+.grid-container >* {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    /* border-radius: 4px; */
+    padding:10;
+    text-align: center;
+    z-index: 1;
+}
+.header {
+    grid-area: header;
+    background-color: black;
+}
+.navbar {
+    grid-area: navbar;
+    background-color: #afd6af;
+}
+.main {
+    grid-area: main;
+    background: url(../images/Imagen3.png);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:white;
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color: #fdcfcf;
+}
+.footer {
+    grid-area: footer;
+    background-color: black;
+}
+/* Pantalla de celular */
+.grid-container{
+    display: grid;
+    /* gap: 10px; */
+    grid-template: 
+        "header"  50px
+        "navbar"  0px
+        "main"    auto
+        "sidebar" 0px
+        "footer"  50px;
+}
+/* Pantalla de tablet */
+@media (min-width: 600px) {
+    .grid-container{
+        grid-template: 
+            "header  header"  50px
+            "navbar  navbar"  0px
+            "main    sidebar" auto 0px
+            "footer  footer"  100px /
+            200px    auto;
+    }
+} 
+/* Pantalla de monitor */
+@media (min-width: 900px) {
+    .grid-container{
+        grid-template: 
+            "header header header"  50px
+            "navbar main   sidebar" 0px auto 0px
+            "footer footer footer" 100px/
+            200px   auto   200px;
+    }
+} 
