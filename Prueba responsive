@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario Comparte Vida</title>
+    <link rel="stylesheet" href="Stilo1.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Etiqueta meta que nos sirve para indicarle al navegador como verificar
+la escala de la pagina, NECESARIA para responsive-->
+  </head>
+  <body
+    class="grid-container"
+    body
+    style="background-color: rgba(0, 0, 0, 0.671)"
+  >
+    <header></header>
+    <!--Aqui no tiene nada, es simplemente para dar un espacio negro-->
+    <aside class="sidebar"></aside>
+    <img src="emblema.jpg" class="Imag1" />
+    <img src="Imagen3.png" class="Imag2" />
+    <main>
+      <div class="Registro">
+        <h1>Regístrate</h1>
+        <p class="parraforegistro">
+          Por favor diligenciar tus datos personales para realizar el proceso.
+          Una vez registrado, podrás acceder al sistema de agendamiento de citas
+          para la donación de plaquetas por aféresis Comparte vida.
+        </p>
+      </div>
+      <form action="" class="formulario" id="formulario">
+        <section class="home">
+          <h2>Ingresa tus datos personales</h2>
+          <div class="Fila">
+            <div class="Field">
+              <label>Nombres</label>
+              <input type="text" name="Nombres" id="Nombre" required />
+            </div>
+            <div class="Field">
+              <label>Apellidos</label>
+              <input type="text" name="Apellidos" id="Apellido" required />
+            </div>
+            <div class="Field">
+              <label>Genero</label>
+              <select name="genero" size="1" required>
+                <option selected disabled>Elige una opción</option>
+                <option>Masculino</option>
+                <option>Femenino</option>
+              </select>
+            </div>
+          </div>
+          <div class="Fila">
+            <div class="Field">
+              <label>Tipo de documento</label>
+              <select name="TipoIdentificación" size="1" required>
+                <option selected disabled>Elige tipo de documento</option>
+                <option>Cedula de Ciudadania</option>
+                <option>Permiso de Permanencia</option>
+                <option>Cedula de Extranjero</option>
+              </select>
+            </div>
+            <div class="Field">
+              <label>No documento</label>
+              <input
+                type="number"
+                name="No documento"
+                id="No documento"
+                required
+              />
+            </div>
+            <div class="Field">
+              <label>RH</label>
+              <input type="text" name="RH" id="RH" required />
+            </div>
+          </div>
+          <div class="Fila">
+            <div class="Field">
+              <label>Telefono</label>
+              <input type="number" name="Telefonoo" id="Telefono" required />
+            </div>
+            <div class="Field">
+              <label>email</label>
+              <input type="email" required="" name="Correo" id="Correo" />
+            </div>
+            <div class="Field">
+              <label>Contraseña</label>
+              <input
+                type="password"
+                name="Contraseña"
+                id="Contraseña"
+                required
+              />
+            </div>
+          </div>
+          <div class="Privacidad">
+            <div>
+              <input type="checkbox" id="input1" name="boton" />
+              <label for="input1"
+                >Deseo recibir información a través de mensajes SMS.</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" id="input2" name="boton" /><br />
+              <label for="input2"
+                >Deseo recibir información a través de mensajes de correo
+                electrónico.</label
+              >
+            </div>
+            <div>
+              <input type="checkbox" id="input3" name="boton" required />
+              <label for="input3"
+                >Acepto <a href="#">términos y condiciones de uso</a></label
+              >
+            </div>
+          </div>
+          <div class="Fila Tamaño">
+            <div class="boton">
+              <button type="submit" value="Aceptar">ACEPTAR</button>
+            </div>
+            <div class="boton">
+              <button type="submit" value="Cancelar">CANCELAR</button>
+            </div>
+          </div>
+        </section>
+      </form>
+
+      <div class="Franja2"></div>
+    </main>
+    <footer>
+      <div class="Pie1 piepag1">
+        <!--piepag1 clase 2 para edicion en responsive-->
+        <p2 aling="center"
+          >Cruz Roja Colombiana Seccional Antioquia - Copyrihgt UNAB MISION TIC
+          2022 -</p2
+        >
+      </div>
+      <div class="Pie2 piepag1">
+        <!--piepag2 clase 2 para edicion en responsive-->
+        <p3 aling="center"
+          ><a href="#"
+            >Politica de tratamiento de datos Personales - Contactenos</a
+          ></p3
+        >
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+
+
+CSS
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Century Gothic;
+}
+/*prueba 1 de responsive */
+h1 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+
+  text-transform: uppercase;
+  color: white;
+}
+.Fila {
+  display: flex;
+  justify-content: space-around;
+}
+.Registro {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: 150px auto;
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 10px;
+  color: white;
+}
+
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+  margin-top: -130px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 7px 13px 37px #000;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section h2 {
+  color: red;
+  text-align: left;
+  border-bottom: 1px solid red;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background: black;
+  color: rgb(255, 250, 250);
+}
+
+header p2 p3 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Field {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: 0.5rem 0.5rem;
+  position: relative;
+}
+
+.Field label {
+  width: 100%;
+  font-size: 0.9rem;
+  padding-left: 15px;
+  margin-bottom: 0.2rem;
+  color: rgb(250, 7, 7);
+}
+
+.Field input {
+  width: 100%;
+  font-size: 1.1rem;
+  height: 2.2rem;
+  padding: 0.5rem;
+  border: 2px solid red;
+  border-radius: 10px;
+  background: none;
+}
+
+.Field select {
+  width: 100%;
+  font-size: 1.1rem;
+  height: 2.2rem;
+  padding-left: 0.5rem;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+
+.Privacidad {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30rem;
+  margin: 3rem 0;
+  margin-top: 5px;
+  color: red;
+}
+
+.Privacidad div {
+  display: flex;
+  justify-content: left;
+  margin-top: 6px;
+  padding: 0 2px;
+}
+
+.Privacidad label {
+  padding-left: 5px;
+}
+
+.Privacidad input {
+  margin-top: 2px;
+}
+
+.boton {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin-top: -1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.boton button {
+  padding: 0.5rem 1rem;
+  background-color: red;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #ffffff;
+  border: 2px solid red;
+  border-radius: 20px;
+}
+
+.Imag1 {
+  position: absolute;
+  margin-top: 8%;
+  margin-left: 70px;
+  height: 70px;
+  width: 150px;
+  left: 30px;
+  z-index: 1;
+}
+
+.Imag2 {
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  margin-top: 0px;
+  margin-left: 0px;
+  z-index: -1;
+}
+
+.Tamaño {
+  margin: 0 auto;
+}
+
+footer {
+  height: 100px;
+  margin-top: 50px;
+  background: black;
+}
+
+.Pie1 {
+  color: rgb(255, 255, 255);
+  margin-left: 200px;
+  padding: 15px 0 5px;
+}
+
+.Pie2 {
+  margin-left: 200px;
+}
+
+@media only screen and (max-width: 700px) {
+  .Imag2 {
+    position: relative;
+  }
+
+  .formulario {
+    height: 80%;
+  }
+}
+
+div {
+  width: 95%;
+  display: inline-block;
+  padding: 0px;
+  /*posicionamiento divs en conjunto responsive*/
+}
+/* Pantalla de celular */
+.grid-container {
+  display: grid;
+  /* gap: 10px; */
+  grid-template:
+    "header" 50px
+    "navbar" 0px
+    "main" auto
+    "sidebar" 0px
+    "footer" 50px;
+}
+
+/* Pantalla de tablet */
+@media only screen and (min-width: 600px) {
+  div {
+    display: block;
+    width: 100%;
+    /*bloquear display cuando no se cumpla la funcion de 600px en diferente tipo de pantalla*/
+  }
+  .grid-container {
+    grid-template:
+      "header  header" 50px
+      "navbar  navbar" 0px
+      "main    sidebar" auto 0px
+      "footer  footer" 100px /
+      200px auto;
+  }
+}
+/* Pantalla de monitor */
+@media only screen and (min-width: 900px) {
+  div {
+    display: block;
+    width: 100%;
+    /*bloquear display cuando no se cumpla la funcion de 900px en diferente tipo de pantalla*/
+  }
+  .grid-container {
+    grid-template:
+      "header header header" 50px
+      "navbar main   sidebar" 0px auto 0px
+      "footer footer footer" 100px/
+      200px auto 200px;
+  }
+}
