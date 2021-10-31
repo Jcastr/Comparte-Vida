@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Donantes</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/alertify.min.css" />
+      
+    </head>
+    <body>
+        <div class="container mt-4 shadow-lg p-3 mb-5  rounded ">
+            <button id="btnCrear" type="button" class="btn btn-primary">Crear Donante</button>
+        
+            <table id="donantes" class="table mt-2 table-bordered table-striped">
+              <thead>
+                <tr class="text-center">
+                  <th>NOMBRES</th>
+                  <th>APELLIDOS</th>
+                  <th>GÉNERO</th>
+                  <th>T. DOCUMENTO</th>
+                  <th>DOCUMENTO</th>
+                  <th>RH</th>
+                  <th>TELEFONO</th>
+                  <th>MAIL</th>
+                  <th>PWD</th>
+                  <th>ACCIONES</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+        
+              </tbody>
+            </table>
+        </div>
+
+        <div class="modal fade" id="modalDonante" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="exampleModalLabel">Donantes</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="nombres" class="col-form-label">Nombres :</label>
+                    <input id="nombres" type="text" placeholder="Digite los nombres" class="form-control" id="recipient-name"
+                      required autocomplete="off" oninvalid="setCustomValidity('Digite Nombres')"
+                      oninput="setCustomValidity('')">
+                  </div>
+                  <div class="mb-3">
+                    <label for="apellidos" class="col-form-label">Apellidos :</label>
+                    <input id="apellidos" placeholder="Digite los apellidos" type="text" class="form-control" id="recipient-name"
+                      required autocomplete="off" oninvalid="setCustomValidity('Digite Apellidos')"
+                      oninput="setCustomValidity('')">
+                  </div>
+                  <div class="mb-3">
+                    <label for="genero" class="col-form-label">Genero :</label>
+                    <input id="genero" placeholder="Digite género" type="text" class="form-control"
+                      id="recipient-name" required autocomplete="off" oninvalid="setCustomValidity('Digite género')"
+                      oninput="setCustomValidity('')">
+                  </div>
+                  <div class="mb-3">
+                    <label for="tipoDoc" class="col-form-label">T. documento :</label>
+                    <input id="tipoDoc" placeholder="Digite el Tipo de Documento" type="text" class="form-control" id="recipient-name"
+                      id="recipient-name" required autocomplete="off" oninvalid="setCustomValidity('Digite un Teléfono')"
+                      oninput="setCustomValidity('')">
+                  </div>
+                  <div class="mb-3">
+                    <label for="documento" class="col-form-label">Documento :</label>
+                    <input id="documento" placeholder="Digite número de documento" type="text" class="form-control" id="recipient-name"
+                      required autocomplete="off" oninvalid="setCustomValidity('Digite número de documento')"
+                      oninput="setCustomValidity('')">
+                  </div>
+                  <!-- ******************************************************************-->
+                  <div class="mb-3">
+                    <label for="RH" class="col-form-label">RH :</label>
+                    <input id="RH" placeholder="Digite RH" type="text" class="form-control" id="recipient-name"
+                      required autocomplete="off" oninvalid="setCustomValidity('Digite RH')"
+                      oninput="setCustomValidity('')">
+                  </div>
+                  <div class="mb-3">
+                    <label for="telefono" class="col-form-label">Teléfono :</label>
+                    <input id="telefono" placeholder="Digite número de teléfono" type="text" class="form-control" id="recipient-name"
+                      required autocomplete="off" oninvalid="setCustomValidity('Digite número de teléfono')"
+                      oninput="setCustomValidity('')">
+                  </div>
+                  <div class="mb-3">
+                    <label for="mail" class="col-form-label">Mail :</label>
+                    <input id="mail" placeholder="Digite correo electrónico" type="text" class="form-control" id="recipient-name"
+                      required autocomplete="off" oninvalid="setCustomValidity('Digite correo electrónico')"
+                      oninput="setCustomValidity('')">
+                  </div>
+                  <div class="mb-3">
+                    <label for="pwd" class="col-form-label">Contraseña :</label>
+                    <input id="pwd" placeholder="Digite contraseña" type="text" class="form-control" id="recipient-name"
+                      required autocomplete="off" oninvalid="setCustomValidity('Digite contraseña')"
+                      oninput="setCustomValidity('')">
+                  </div>
+                  <!-- ******************************************************************-->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                  </div>
+                </form>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+        crossorigin="anonymous"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" 
+        crossorigin="anonymous"></script> 
+        <script src="js/alertify.min.js"></script>
+        
+
+        <script src="js/donantes.js"></script>
+
+</body>
+</html>
